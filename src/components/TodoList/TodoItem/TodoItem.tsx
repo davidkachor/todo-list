@@ -41,6 +41,7 @@ const TodoItem: React.FC<{
 			<input
 				type="checkbox"
 				id={id + '-item'}
+				defaultChecked={props.isDone}
 				onChange={() => switchIsDone(props.id)}
 			/>
 			<Text htmlFor={id + '-item'} done={props.isDone}>
